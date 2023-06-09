@@ -10,7 +10,8 @@ services:
       - "${JENKINS_SSH_AGENT_PORT}:22"
     environment:
       - JENKINS_AGENT_SSH_PUBKEY=${JENKINS_AGENT_SSH_PUBKEY}
-networks:
-  default:
-    name: jenkins
-    external: true
+# Uncomment these lines if you want to connect to an external docker network
+#networks:
+#  default:
+#    name: jenkins
+#    external: true
